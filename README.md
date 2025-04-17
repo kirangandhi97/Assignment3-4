@@ -1,10 +1,3 @@
-Sure! Here's your customized `README.md` file tailored specifically for your project name **TradeFinanceSystem**, with GitHub user **`kirangandhi97`**, and reflecting the same functionality and tech stack as described.
-
----
-
-### ✅ `README.md` for `TradeFinanceSystem`
-
-```markdown
 <p align="center">
   <a href="https://laravel.com" target="_blank">
     <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
@@ -81,7 +74,7 @@ podman exec -it trade_finance_app php artisan migrate
 
 # Create test users
 podman exec -it trade_finance_app php artisan tinker
-```
+
 
 ```php
 \App\Models\User::create([
