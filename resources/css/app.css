@@ -1,0 +1,14 @@
+/* Import Bootstrap */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Your custom styles below */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.py-4 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/* Add more custom styles as needed */
