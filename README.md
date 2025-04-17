@@ -1,3 +1,10 @@
+Sure! Here's your customized `README.md` file tailored specifically for your project name **TradeFinanceSystem**, with GitHub user **`kirangandhi97`**, and reflecting the same functionality and tech stack as described.
+
+---
+
+### ✅ `README.md` for `TradeFinanceSystem`
+
+```markdown
 <p align="center">
   <a href="https://laravel.com" target="_blank">
     <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
@@ -74,7 +81,9 @@ podman exec -it trade_finance_app php artisan migrate
 
 # Create test users
 podman exec -it trade_finance_app php artisan tinker
+```
 
+```php
 \App\Models\User::create([
     'name' => 'Admin User',
     'email' => 'admin@example.com',
@@ -88,8 +97,11 @@ podman exec -it trade_finance_app php artisan tinker
     'password' => bcrypt('password'),
     'role' => 'user'
 ]);
+```
 
-Manual (Local) Setup
+### Manual (Local) Setup
+
+```bash
 git clone https://github.com/kirangandhi97/TradeFinanceSystem.git
 cd TradeFinanceSystem
 
@@ -102,45 +114,56 @@ php artisan key:generate
 # Update .env for DB connection
 php artisan migrate
 php artisan serve
+```
 
+---
 
-Usage Guide
-For Users
-Login to your account
+## 📘 Usage Guide
 
-Create guarantees or upload files
+### For Users
+- Login to your account
+- Create guarantees or upload files
+- Submit drafts for admin review
 
-Submit drafts for admin review
+### For Admins
+- Review & approve guarantees
+- Apply or reject with comments
+- Issue approved guarantees
+- Process uploaded files
 
-For Admins
-Review & approve guarantees
+---
 
-Apply or reject with comments
+## 📂 Project Structure
 
-Issue approved guarantees
+- `app/Http/Controllers` - All controllers
+- `app/Models` - Eloquent models
+- `resources/views` - Blade templates
+- `routes/web.php` - Main route file
+- `database/migrations` - Schema setup
 
-Process uploaded files
+---
 
-Project Structure
-app/Http/Controllers - All controllers
+## ✅ Testing
 
-app/Models - Eloquent models
+```bash
+php artisan test
+```
 
-resources/views - Blade templates
+---
 
-routes/web.php - Main route file
+## 🐞 Troubleshooting
 
-database/migrations - Schema setup
+| Issue | Solution |
+|-------|----------|
+| File upload fails | Ensure format is CSV, JSON, or XML and size < 10MB |
+| Database errors | Check DB config in `.env` and run `php artisan migrate:fresh` |
+| Permission denied | Verify folder permissions (especially `storage/` and `bootstrap/cache/`) |
 
+---
 
-Troubleshooting
-Issue | Solution
-File upload fails | Ensure format is CSV, JSON, or XML and size < 10MB
-Database errors | Check DB config in .env and run php artisan migrate:fresh
-Permission denied | Verify folder permissions (especially storage/ and bootstrap/cache/)
+## 📦 Deployment Notes
 
-
-Deployment Notes
+```bash
 # Start
 podman-compose up -d
 
@@ -149,31 +172,39 @@ podman-compose down
 
 # Logs
 podman logs trade_finance_app
+```
 
-
-Database Backup
+### Database Backup
+```bash
 podman exec trade_finance_db \
   mysqldump -u root -pyour_password trade_finance_guarantee_issuance_system_production \
   > backup_$(date +%Y%m%d).sql
+```
 
+---
 
-Contributing
-Fork the repo
+## 🤝 Contributing
 
-Create a new branch: git checkout -b feature/my-feature
+1. Fork the repo
+2. Create a new branch: `git checkout -b feature/my-feature`
+3. Commit changes: `git commit -am 'Add feature'`
+4. Push: `git push origin feature/my-feature`
+5. Create a pull request
 
-Commit changes: git commit -am 'Add feature'
+---
 
-Push: git push origin feature/my-feature
+## 📜 License
 
-Create a pull request
+This project is licensed under the [MIT License](LICENSE).
 
-Acknowledgments
-Laravel Framework
+---
 
-Bootstrap CSS
+## 🙏 Acknowledgments
 
-Docker / Podman
+- Laravel Framework
+- Bootstrap CSS
+- Docker / Podman
+```
 
 ---
 
